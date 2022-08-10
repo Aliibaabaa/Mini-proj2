@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex&family=Caveat+Brush&family=Caveat:wght@400;500;600&family=Chelsea+Market&family=PT+Sans+Narrow&family=Poppins:ital,wght@0,200;0,600;1,400&family=Questrial&family=Quicksand&display=swap');
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    border:0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.events {
+margin-left: 20px;
+
+}
+
+.events .row {
+    height:100%;}
+
+
+ .col-md-3 .ryt {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    padding-top: 20px;
+    height: 100%;
+    box-shadow: 5px 10px gray;
+}
+
+ .col-md-3 .lef {
+    font-size:18px;
+    background-color: #343a404f;
+    height: 100%;
+    padding:50px 0;
+    font-weight: bold;
+    box-shadow: 0px 3px gray;
+}
+
+.bg-gray {
+    background-color: #e9ecef;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.text-heading {
+    color: #343a40;
+}
+
+.text-para {
+    color: #6c757d;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-unstyled li a {
+    text-decoration: none;
+}
+
+.list-unstyled li a:hover { 
+    text-transform: uppercase;
+}
