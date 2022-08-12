@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="p2.jpg.png" type="image/png">
@@ -31,8 +31,29 @@
               <li class="nav-item">
                 <a class="nav-link" href="#"> <i class="fa fa-leanpub"></i> Learn with Me! </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa fa-bars"></i> Services</a>
+              <li class="nav-item dropdownn">
+                  <a class="nav-link" href="#"><i class="fa fa fa-bars"></i> Admissions
+                    <button class="btn1"> 
+                        <i class="fa fa-caret-down"></i>
+                  </button>
+                </a>
+                    <ul class="dropdown-cont" style="min-width:200px;">
+                      <li><a class="dropdown-item" href="#">Early Childhood</a></li>
+                      <li><a class="dropdown-item" href="#">Elementary</a></li>
+                      <li><a class="dropdown-item" href="#">Junior High School</a></li>
+                      <li><a class="dropdown-item" href="#">Senior High School</a></li>
+                    </ul>
+            </li>
+              <li class="nav-item dropdownn">
+                    <a class="nav-link" href="#"><i class="fa fa fa-bars"></i> Services
+                      <button class="btn1"> 
+                          <i class="fa fa-caret-down"></i>
+                    </button>
+                  </a>
+                      <ul class="dropdown-cont">
+                        <li><a class="dropdown-item" href="#">Registrar</a></li>
+                        <li><a class="dropdown-item" href="#">Treasury</a></li>
+                      </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#feat1"><i class="fa fa-info"></i> Facilities</a>
@@ -78,9 +99,9 @@
                 <ul class="my-controls"> 
                   <li class="playBtn1" onclick="playBtn()"><img src="play.png">  </li> 
                   <li class="pauseBtn1" onclick="pauseBtn()"><img src="pause.png">  </li>
-                  <!-- <li id="muteBtn1" onclick="muteBtn()"><img src="mute.png">  </li>
-                  <li id="unmuteBtn1" onclick="unmuteBtn()"><img src="unmute.png"> 
-                  </li> -->
+                   <!-- <li id="muteBtn1" onclick="muteBtn()"><img src="mute.png">  </li>
+                  <li id="unmuteBtn1" onclick="unmuteBtn()"><img src="unmute.png">  -->
+                  </li> 
               </ul>
             </div>
             </div>
@@ -92,8 +113,7 @@
 
     <div class="row" style="background-color: transparent;">
         <div class="col-12"> 
-            <div class="lef"> ECS partners with parents to build their children academically, creatively, and socially so they are well prepared to be influential leaders in college and beyond. Our dynamic teachers understand their role as a calling and thrive
-              in a culture in which every student is known, loved and disciplined. 
+            <div class="strip1"> ECS provides students with a learning environment that will make them globally competitive and partners with parents to build their children academically, creatively, and socially so they are well prepared to be influential leaders in college and beyond. With its long tradition of leading-edge excellence, our dynamic teachers understand their role as a calling and thrive in a culture in which every student is known, loved and disciplined. 
             </div>
         </div>
 <br>   
@@ -104,70 +124,162 @@
         <div class="feature2-row2">
             <div class="feature2-col">
                 <img src="ec.jpg">
-                <h4> EARLY CHILDHOOD </h4>   
-                <p > Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero architecto dolore fugiat quidem assumenda modi eligendi facere cumque perferendis iusto.
-                    <br/>.</p> 
+                <div class = overlay>
+                  <h4> EARLY CHILDHOOD </h4> 
+                  <hr style=" width:60% ;  margin: 10px 50px;">
+                  <p > Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero architecto dolore fugiat quidem assumenda modi eligendi facere cumque perferendis iusto.
+                      <br/>.</p> 
+                </div>
             </div>
             <div class="feature2-col"> 
                 <img src="elem.jpg">
-                <h4> LOWER SCHOOL </h4>   
-                <p > Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero architecto dolore fugiat quidem assumenda modi eligendi facere cumque perferendis iusto.<br/>.</p> 
-            </div>
+                <div class = overlay>
+                  <h4> ELEMENTARY </h4> 
+                  <hr style=" width:60% ;  margin: 10px 50px;">  
+                  <p > Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero architecto dolore fugiat quidem assumenda modi eligendi facere cumque perferendis iusto.<br/>.</p> 
+                </div>
+              </div>
             <div class="feature2-col"> 
-                <img src="hs.jpg">
-                <h4> MIDDLE SCHOOL </h4>   
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusantium iusto et nihil rerum natus veniam minus voluptas placeat sunt?
+              <img src="hs.jpg">
+                <div class = overlay>
+                  <h4> JUNIOR HIGH SCHOOL </h4>   
+                  <hr style=" width:60% ;  margin: 10px 50px;">
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusantium iusto et nihil rerum natus veniam minus voluptas placeat sunt?
                     <br/>.</p> 
+                </div>
             </div>
             <div class="feature2-col"> 
                 <img src="shs1.jpg">
-                <h4> UPPER SCHOOL </h4>   
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere praesentium commodi placeat facilis illo, fugiat excepturi ipsa iure est?
-                    <br/>.</p> 
+                <div class = overlay>
+                  <h4> SENIOR HIGH SCHOOL </h4>   
+                  <hr style=" width:60% ;  margin: 10px 50px;">
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere praesentium commodi placeat facilis illo, fugiat excepturi ipsa iure est?
+                      <br/>.</p> 
+                </div>
             </div>
             
         </div> 
     </section> 
-        
- <!-- WHY US
- <div class="container-fluid">
-    <div class="row" id="feat1" style="background-color: #c9570b;">
-          <h1> WHY US? </h1> <br/> 
-        </div>
-    
-    <div class="row" style="text-align: center; background-color: #FDF0B8;" id="feat">
-        <div class="col">
-            <img src="q1.png">
-            <h4> Quality Ingredients </h4> 
-        </div>
-        <div class="col">
-            <img src="q4.png">
-                <h4> Balanced Meals </h4>  
-        </div>
-        <div class="col">
-            <img src="q2.png">
-                <h4> Order On the Go </h4> 
-        </div>
-        <div class="col">
-            <img src="q3.png">
-                <h4> Doorstep Delivery</h4>    
-        </div>
+<br>
+<br>
+ <!-- /*ECS EXCELLENCE*/ -->
+  <div class="container-fluid">
+      <div class="row" id="feats1">
+        <div class="col-12">
+            <h1> <hr> ECS EXCELLENCE <hr> </h1> <br/> 
+      </div>
     </div>
+  <br>
+<!--
+      <div class="row" style="text-align: center; background-color: #FDF0B8; padding: 5px; height: max-content;" id="feats">
+          <div class="col-3" style="background-image: url('excel..jpg');">-->
+              <!-- <img src="excel..jpg">
+              <div class="overlay1">
+                <h4> <strong>00</strong> <br> Years of Excellence </h4> 
+          </div>
+        </div>
+          <div class="col-3" style="background-image: url('topnotchers.jpg');"> -->
+            <!-- <img src="topnotchers.jpg"> 
+              <div class="overlay1">
+                  <h4> <strong>00</strong> <br> Board Topnotchers </h4>  
+          </div>
+        </div>
+          <div class="col-3" style="background-image: url('partners.jpg');"> -->
+              <!-- <img src="partners.jpg"> 
+              <div class="overlay1">
+                  <h4><strong>00</strong> <br> Partners</h4> 
+          </div>
+        </div>
+          <div class="col-3" style="background-image: url('accred.png');">-->
+              <!-- <img src="accred.png"> 
+              <div class="overlay1">
+                  <h4><strong>00</strong> <br> Accredited Programs</h4>    
+          </div>
+        </div>
+      </div>
+  </div>-->
+
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1000">
+      <img src='excel..jpg' class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>First slide label</h5> -->
+        <p> <strong>00</strong> <br> Years of Excellence</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="1000">
+      <img src='topnotchers.jpg' class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Second slide label</h5> -->
+        <p> <strong>00</strong> <br> Board Topnotchers </p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="1000">
+      <img src='partners.jpg' class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Third slide label</h5> -->
+        <p> <strong>00</strong> <br> Partners</h4></p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="1000">
+      <img src='accred.png' class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Third slide label</h5> -->
+        <p> <strong>00</strong> <br> Accredited Programs</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
- -->
+
+<br>
+
+<div class="hero2">
+  <div class="row">
+    <div class = "col-6" style="border: 2px solid red;;">
+          <h1> Calendar of Events (card)</h1>
+    </div>
+    <div class = "col-6" style="border: 2px solid red">
+      <h1> Announcements / Latest News (slide) </h1>
+    </div> 
+  </div>
+</div>
+
+
+
 
 <br/>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 <script> 
   var nav = document.querySelector('nav');
-    window.addEventListener('scroll', function() {
+
+   
+  window.addEventListener('scroll', function() {
       if(window.pageYOffset > 100) {
         nav.classList.add('bg-success', 'shadow');
+        document.getElementsByClassName('.dropdown-menu').style.backgroundColor = '#08331fce';
       }else{
         nav.classList.remove('bg-success','shadow')
+        document.getElementsByClassName('.dropdown-menu').style.backgroundColor = 'none';
       }
     })
 
