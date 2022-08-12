@@ -5,36 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Interactive Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="miniproj_mainInteractive.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     
 </head>
 <body>
-    <div id="mySidebar" class="sidebar">
+    <div id="mySidebar" class="sidebars">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <ul class="navbar">
-            <li class="navbar-items">Student Profile</li>
-            <li class="navbar-items"><img src = "baba_t.webp" width ="180px"></li>
-             <li class="navbar-items">Student id#</li>
-             <li class="navbar-items">Student Name</li>
-             <li class="navbar-items">Grade</li>
-              <li class="navbar-items">Section</li>
-              <li class="navbar-items">Best Subject</li>
-              <li class="navbar-items">Worst Subject</li>
+        <ul class="navbars" style = "border-bottom: 5px solid goldenrod;">
+          <table style = "margin-left: -15px;">
+            <tr>
+          <th rowspan ="2" ><img src = "p2.jpg.png" style = "width:4rem; height: 4rem;bottom:3rem; left:3rem;"></th>
+           <td style = "padding-top: 12px; color: white;
+           text-shadow: 3px 3px #000000;
+           font-family: 'Chelsea Market', cursive;
+           font-weight: bold"><h1 style = "font-size: 1.3rem;">EVANGELICAL<br><p style = "font-size: 1rem; letter-spacing: 2px;">Christian School</p></h1></td>
+           
+        </tr>
+     
+          </table>
+       
+         
+          </ul>
+         
+            <li class="navbars-items"><i class="fa fa-id-card fa-fw" aria-hidden="true"></i> STUDENT PROFILE</li>
+            <li class="navbars-items"><img src = "baba_t.webp" width ="180px"></li>
+             <li class="navbars-items">Student id#</li>
+             <li class="navbars-items">Student Name</li>
+             <li class="navbars-items">Grade</li>
+              <li class="navbars-items">Section</li>
+              <li class="navbars-items">Best Subject</li>
+              <li class="navbars-items">Worst Subject</li>
         
       </div>
       
       <div id="main">
-       <div class="miniNav">
+       <div id = "navFunc" class="miniNav">
         <button id ="btns" class="openbtn" onclick="openNav()" >☰</button>  
         
+        <img id = "logz" src = "p2.jpg.png" style = "width:3rem; height: 3rem; position:absolute; top:3px; left:4rem;">
+        <div class="schoolName">
+        <h1>hesus</h1>
         </div>
-    <div class="welcome_card">
+        </div>
+
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="bckgrnd.jpg" class="d-block w-100" alt="welcome">
+                <div class="carousel-conti">
+                    <h1>WELCOME TO OUT INTERACTIVE WEBSITE</h1>
+                    <p>Learning made fun! enrich your knowledge or learn something new the fun way through our fun activities.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="qa.png" class="d-block w-100" alt="...">
+                <div class="carousel-conti">
+                    <h1>Fun Quizzes and Activities</h1>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="learning.png" class="d-block w-100" alt="...">
+                <div class="carousel-conti">
+                    <h1>Fun and Educational Games</h1>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+    <!--<div class="welcome_card">
         <h1>WELCOME TO THE INTERACTIVE WEBISTE</h1>
         <h2 class="message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nulla libero commodi a quaerat aperiam.</h2>
+<<<<<<< HEAD
     </div>
     <h1 style="text-align:center" >Fun Learning Activities</h1>
+=======
+    </div>-->
+    <h1 align="center" style = "background-color: darkgoldenrod; padding:2px; font-size:2rem; " >Fun Learning Activities</h1>
+>>>>>>> 7744613d82c5ab491580e3611ae3b40d46b0b14a
     <section class="grid_container">
 
        
@@ -57,7 +110,7 @@
                  <div id="myModal" class="modal">
                     <!--modal content-->
                     <div class="modal-content">
-                         <span class="close">&times;</span>
+                         <span class="closes">&times;</span>
                        
                         
                         <h2>Subjects</h2>
@@ -138,67 +191,69 @@
                     <div class="modal-content">
                         <span class="aclose">&times;</span>
 
-                       <h2 style = "background: linear-gradient(
-                        rgb(21, 232, 130),
-                        rgb(7, 152, 41) 10%,
-                        rgb(6, 115, 12)
-                    ); padding: .5rem; font-size:18px; width: 100%; border-radius: 2rem;">Subjects</h2>
+                        <h2>Subjects</h2>
                         <div class="modalContainer">
-                         
-                            <div class="modalCard" style = "background-image: url(math.jpg);
-                            background-size:cover; background-position:center; background-size:cover;">
-                           <div class ="modalCContent">
-                        <h3 class = "modal_title">Math</h3>
-                        <p class = "card-body"></p>
-                        <input type = "button" value = "Begin Activity">
-                        <input type = "button" value = "Begin Quiz">
-                           </p>
-                    </div>  
+                          
+                                <div class="modalCard" style = "background-image: url(math.jpg);
+                                background-size:cover; background-position:center; background-size:cover;">
+                                <div class ="modalCContent">
+                            <h3 class = "modal_title">Math</h3>
+                            <p class = "card-body">
+                       
+                        <input type = "button" value = "Start Activity">
+                         <input type = "button" value = "Start Quiz">
+                        </p>
+                        </div>
                             </div>
 
                             <div class="modalCard" style = "background-image: url(science.png);
                             background-size:cover; background-position:center; background-size:cover;">
                             <div class ="modalCContent">
+
                         <h3 class = "modal_title">Science</h3>
                         <p class = "card-body">
-                        <input type = "button" value = "Begin Activity">
-                        <input type = "button" value = "Begin Quiz">
-                            </p>
-                                </div>
+                       
+                        <input type = "button" value = "Start Activity">
+                        <input type = "button" value = "Start Quiz">
+                        </p>
+                        </div>
+                            </div>
+
+
+                             <div class="modalCard" style = "background-image: url(english.jpg);
+                            background-size:cover; background-position:center; background-size:cover;">
+                            <div class ="modalCContent">
+                        <h3 class = "modal_title">English</h3>
+                        <p class = "card-body">
+                        
+                        <input type = "button" value = "Start Activity">
+                        <input type = "button" value = "Start Quiz">
+                        </p>
+                        </div>
                             </div>
 
                             <div class="modalCard" style = "background-image: url(english.jpg);
                             background-size:cover; background-position:center; background-size:cover;">
                             <div class ="modalCContent">
-                        <h3 class = "modal_title">English</h3>
-                        <p class = "card-body">
-                        <input type = "button" value = "Begin Activity">
-                        <input type = "button" value = "Begin Quiz">
-                            </p>
-                                </div>
-                            </div>
-
-                            <div class="modalCard" style = "background-image: url(science.png);
-                            background-size:cover; background-position:center; background-size:cover;">
-
-                            <div class ="modalCContent">
                         <h3 class = "modal_title">Filipino</h3>
-                         <p class = "card-body">
-                        <input type = "button" value = "Begin Activity">
-                        <input type = "button" value = "Begin Quiz">
-                            </p>
-                         </div>
+                        <p class = "card-body">
+                        
+                        <input type = "button" value = "Start Activity">
+                        <input type = "button" value = "Start Quiz">
+                        </p>
+                        </div>
                             </div>
 
                             <div class="modalCard" style = "background-image: url(history.jpg);
-                            background-size:cover; background-position:center; background-size:cover;">   
+                            background-size:cover; background-position:center; background-size:cover;">
                             <div class ="modalCContent">
                         <h3 class = "modal_title">History</h3>
                         <p class = "card-body">
-                        <input type = "button" value = "Begin Activity">
-                        <input type = "button" value = "Begin Quiz">
-                            </p>
-                                </div>
+                       
+                        <input type = "button" value = "Start Activity">
+                         <input type = "button" value = "Start Quiz">
+                        </p>
+                            </div>
                             </div>
                         </div>
                         <br>
@@ -250,12 +305,12 @@
                 </div>
                 -->
        
-    </div>
+    
 </section> 
 
  
 <section class="mileStones">
-    <h1>STUDENT MILESTONES</h1>
+    <h1> <i class="fa fa-trophy" aria-hidden="true"></i>STUDENT MILESTONES<i class="fa fa-trophy" aria-hidden="true"></i></h1>
     <div class="mileCont">
         
 
@@ -277,6 +332,7 @@
         </div>
 
     </div>
+  </div>
 </section>
 </div>
 <section class = "footer">
@@ -314,7 +370,7 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("closes")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
@@ -386,18 +442,22 @@ window.onclick = function(event3) {
 }
 
 function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("mySidebar").style.width = "270px";
+  document.getElementById("main").style.marginLeft = "270px";
   document.getElementById("btns").style.visibility = "hidden";
+  document.getElementById("logz").style.visibility = "hidden";
 }
 
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
   document.getElementById("btns").style.visibility = "visible";
+  document.getElementById("logz").style.visibility = "visible";
 }
-</script>
 
+
+</script>
+<script src ="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
     
 </body>
