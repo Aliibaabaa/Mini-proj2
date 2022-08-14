@@ -14,12 +14,15 @@
     
 </head>
 <body>
+  <!-- sidbar -->
     <div id="mySidebar" class="sidebars">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <ul class="navbars" style = "border-bottom: 5px solid goldenrod;">
-          <table style = "margin-left: -15px;">
+      <div style = " height: 19px; background:goldenrod; margin-top:-25px ; padding-bottom:0px;"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
+        
+        <ul class="navbars" style = "border-top: 5px solid goldenrod;">
+          <table style = "margin-left: -15px; margin-top:15px;">
             <tr>
-          <th rowspan ="2" ><img src = "p2.jpg.png" style = "width:4rem; height: 4rem;bottom:3rem; left:3rem;"></th>
+          <th rowspan ="2" >
+            <a href = "homee.html"><img src = "p2.jpg.png" style = "width:4rem; height: 4rem;bottom:3rem; left:3rem;"></a></th>
            <td style = "padding-top: 12px; color: white;
            text-shadow: 3px 3px #000000;
            font-family: 'Chelsea Market', cursive;
@@ -42,17 +45,18 @@
               <li class="navbars-items">Worst Subject</li>
         
       </div>
-      
+      <!-- main -->
       <div id="main">
+        <!-- sidebarbutton -->
        <div id = "navFunc" class="miniNav">
         <button id ="btns" class="openbtn" onclick="openNav()" >☰</button>  
-        
-        <img id = "logz" src = "p2.jpg.png" style = "width:3rem; height: 3rem; position:absolute; top:3px; left:4rem;">
+        <a href = "homee.html">
+        <img id = "logz" src = "p2.jpg.png" style = "width:3rem; height: 3rem; position:absolute; top:3px; left:4rem;"></a>
         <div class="schoolName">
-        <h1>hesus</h1>
+  
         </div>
         </div>
-
+        <!-- carousel -->
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -317,6 +321,7 @@
         <div class="mileContCard">
             <div class="CcContent">
                 <h1 class ="mile_title">Quiz Standing</h1>
+                
             </div>
            
         </div>
@@ -443,6 +448,7 @@ window.onclick = function(event3) {
 
 function openNav() {
   document.getElementById("mySidebar").style.width = "270px";
+  document.getElementById("mySidebar").style.visibility = "visible";
   document.getElementById("main").style.marginLeft = "270px";
   document.getElementById("btns").style.visibility = "hidden";
   document.getElementById("logz").style.visibility = "hidden";

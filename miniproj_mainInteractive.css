@@ -137,11 +137,20 @@ body{
     background-color: rgb(6, 77, 39);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 55px;
+    padding-top: 1.5rem;
+    visibility:hidden;
   }
   
   .sidebars a {
-    padding: 8px 8px 8px 32px;
+    padding: 0px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidebars table a {
+    padding: 0px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -168,10 +177,10 @@ body{
   }
   .sidebars .closebtn {
     position: absolute;
-    top: 0;
-    right: 15px;
-    font-size: 25px;
-    margin-left: 70px;
+    margin-top: 0;
+    font-size: 18px;
+    margin-left: 13rem;
+   
   }
   
   .openbtn {
