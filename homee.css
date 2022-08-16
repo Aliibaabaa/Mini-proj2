@@ -769,11 +769,7 @@
     filter: opacity(50%);
     background: blur(4px);
 }
-   */
-.footer #bg-footer{
-    background-size: cover;
-    z-index: 1;
-}
+  */
 
 .foot {
     padding-top: 20px;
@@ -873,8 +869,8 @@
 
 #bottom-ft{
     text-align: center!important;
-    text-decoration: none;
-    background-color: #00000024;
+    text-decoration: underline lightgray;
+    background-color: lightgray;
     color:black;
 }
 
