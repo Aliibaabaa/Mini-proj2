@@ -606,7 +606,7 @@
  .swiper-button {
     display: inline-flex;
     background-image: linear-gradient(#29550b9e,#d9d562a4); 
-    box-shadow: 0px 14px 80px rgba(46, 38, 38, 0.4);
+    box-shadow: 0px 14px 60px #2e262666;
     border-radius: 20px;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -618,6 +618,11 @@
     margin-left: 80%;
     padding: 5px 5px;
  }
+
+ .swiper-button:hover {
+   opacity: 0.5;
+ }
+
  @media  (max-aspect-ratio: 16 / 9) {
     .swiper-button {
         margin-left: 70%;
@@ -871,7 +876,6 @@
     text-decoration: none;
     background-color: #00000024;
     color:black;
-    
 }
 
 /*responsive*/
