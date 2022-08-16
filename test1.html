@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <div>
+
+            <label for ="firstName"> First name:</label><br>
+            <input type="text" id="firstName">
+        </div>
+        <div>
+
+            <label for ="lastName"> Last name:</label><br>
+            <input type="text" id="lastName">
+        </div>
+        <div>
+
+           <button type="submit">Next page</button>
+        </div>
+    </form>
+</body>
+    <script>
+        const form = document.getElementById('form');
+        const firstName = document.getElementById('firstName');
+        const lastName = document.getElementById('lastName');
+
+        form.addEventListener('submit',function(e){
+            e.preventDefault();
+
+            const firstNameValue = firstName.value;
+            const lastNameValue = lastName.value;
+
+            // localStorage.setItem('myObject',JSON.stringify([firstNameValue, lastNameValue]))
+
+            localStorage.setItem('first-name', firstNameValue);
+            localStorage.setItem('last-name', lastNameValue);
+
+            window.location.href = "test2.html";
+        })
+    </script>
+
+</html>
