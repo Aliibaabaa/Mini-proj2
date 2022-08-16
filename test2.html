@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> Data from the previous page</h1>
+    <div>First name: <br> <span id = "first-name"></span></div>
+    <div>Last name: <br> <span id = "last-name"></span></div>
+    
+    <script>
+
+        // console.log (JSON.parse(localStorage.getItem('myOject')));
+
+        // localStorage.clear();
+        // localStorage.remove('myObject');
+        const firstName = localStorage.getItem('first-name');
+        const lastName = localStorage.getItem('last-name');
+
+        document.getElementById('first-name').textContent = firstName;
+        document.getElementById('last-name').textContent = lastName;
+    </script>
+</body>
+</html>
