@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex&family=Caveat+Brush&family=Caveat:wght@400;500;600&family=Chelsea+Market&family=Lexend+Mega&family=PT+Sans+Narrow&family=Poppins:ital,wght@0,200;0,600;1,400&family=Questrial&family=Quicksand&family=Schoolbell&family=Zen+Antique+Soft&display=swap');
 
 
 :root{
     --clr-dark-900: hsl(220, 5%, 12%);
     --clr-light-100: hsl(0, 0%, 100%);
-    --clr-accent-400: hsl(160, 82%, 45%);
+    --clr-accent-400: hsl(140, 76%, 31%);
 }
 
 *,*::before,*::after{
@@ -97,6 +98,9 @@ body{
   height:35rem;
   size:cover;
   position:center;
+  mix-blend-mode: multiply;
+
+  
 }
 
 .carousel-conti{
@@ -104,9 +108,10 @@ body{
   z-index:1;
   float:left;
   position: absolute;
-  bottom: 0rem;
+  bottom: 5rem;
   right: 30rem;
   left: 5rem;
+  justify-content: center;
 }
 .carousel-conti h1{
   font-size:2.5rem;
@@ -209,6 +214,7 @@ body{
     top:0;
     padding: 0px;
     width: 100%;
+    font-family:'Poppins', sans-serif;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -239,26 +245,23 @@ body{
 
 .grid_container{
     margin-top: 1rem;
-    display: inline-grid;
+    display:inline-grid;
     grid-template-columns: auto auto;
     grid-template-columns: repeat(auto-fit, minmax(300px,2fr));
     width: 100%;
     height: auto;
     text-align: center;
-   padding: 0rem 20rem 0rem 20rem;
+   padding: 0rem 10rem 0rem 10rem;
    
-
   
 }
 
 
 .grid_card{
-background-image: url("baba_t.webp");
-background-position: top;
-background-size: cover;
+
 padding: 5rem 0rem 0rem 0rem;
     width:100%;
-    max-width: 39ch;
+    max-width: 35ch;
     border-radius: 0.5rem;
     overflow:hidden;
     transition:transform 500ms ease;
@@ -274,7 +277,7 @@ padding: 5rem 0rem 0rem 0rem;
   width: 100%;
   grid-gap: 1.5rem;
 }
-.grid-card{
+.grid_card{
   max-width: 20ch;
   margin: auto;
 }
@@ -307,7 +310,7 @@ body {
 }
 
 .carousel img {
-  height:auto
+  height:15rem;
 }
 .carousel-conti h1{
   font-size:1.5rem;
@@ -316,20 +319,21 @@ body {
 
 .carousel-conti p{
   color:white;
-  font-size: 1rem;
+  font-size: 12px;
  
 }
 
 .carousel-conti{
-  padding-bottom:5rem;
+  /* padding-top: 2rem;
+  padding-bottom:0rem; */
   z-index:1;
   width: 100%;
   float:left;
   position: absolute;
   bottom: 1rem;
-  right: 30rem;
-  left: 5rem;
   padding-right: 5rem;
+
+  
 }
 .footer-bottom{
   padding-top: 0rem;
@@ -616,7 +620,6 @@ padding:5rem 0rem 0rem 0rem;
 
 }
 .mileCont{
-  margin-left: rem;
   margin-top: 1rem;
   display: inline-grid;
   grid-template-columns: auto auto auto;
@@ -637,8 +640,8 @@ padding:5rem 0rem 0rem 0rem;
     border:1px solid black;
     border-radius:2rem;
     background: linear-gradient(
-hsl(0 0% 0%/ 0),
-rgba(193, 197, 193, 0.509) 10%,
+rgb(0, 0, 0),
+rgba(193, 197, 193, 0.69)
 rgb(249, 251, 250)
 );
 width:100%;
@@ -652,8 +655,6 @@ width:100%;
 .CcContent{
     --padding: 2.8rem;
 padding: var(--padding);
-
-
 text-align:center;
 border-radius:2rem;
 
@@ -663,9 +664,23 @@ border-radius:2rem;
     position: relative;
     width: max-content;
     color:hsl(136, 81%, 31%);
-    font-size: 30px;
+    font-size: 27px;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 2px;
+    font-weight: bold;
+
     }
 
+    .dropdown .btn{
+      font-weight: bold;
+      text-shadow: 1px 1px 1px black;
+    }
+
+    .dropdown a{
+      color: var(--clr-accent-400);
+      font-weight: bold;
+      text-shadow: 1px 1px 1px black;
+    }
     .footer{
       position: static;
       bottom: -20;
