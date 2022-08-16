@@ -722,7 +722,7 @@
 } */
 
 #feat5 {
-    background: linear-gradient(#4f971ec1,#edd745b2); 
+    background: linear-gradient(#4b931ac5,#edbd45b2); 
     box-shadow: 0px 14px 80px rgba(46, 38, 38, 0.4);
     width: 100%;
     border: none;
@@ -737,7 +737,7 @@
     color: white;
     text-transform: uppercase;
     transition: 0.3s;
-    background-color: #08331fc4;
+    background-color: #08331ff1;
     border: 1px solid white;
 }
 
@@ -837,7 +837,7 @@
 }
 
 .footer-col ul li a:hover{
-	padding-left: 10px;
+	padding-left: 25px;
 }
 
 .footer-col .social-links a{
