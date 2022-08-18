@@ -37,11 +37,11 @@ var nav = document.querySelector('nav');
      }
 
 
-     const swiper = new Swiper('.swiper',  {
+     let swiper = new Swiper('.swiper',  {
         // Optional parameters
         direction: 'vertical',
         loop: true,
-
+        lazy: true,
       
         // If we need pagination
         pagination: {
@@ -67,11 +67,28 @@ var nav = document.querySelector('nav');
         mousewheel: {
           invert: false,
         },
-
+        
         // autoHeight: true,
       });
-      
-//   let swiper = new Swiper(".mySwiper", {
+
+    
+    // var swiperr = document.querySelector('.swiper');  
+    // window.addEventListener('scroll', function() {
+    //     document.getElementsByClassName('.swiper').direction = 'vertical' 
+    //   });
+
+
+// let swiperr = new Swiperr(".mySwiper", {
 //  effect: "cards",
 //  grabCursor: true,
-// });
+//   lazy: true,
+//   loop: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//  });
