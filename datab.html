@@ -4,44 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="databstyle.css">
     <title>Document</title>
+
 </head>
 <body>
-    <form id="form">
-        <div>
+    <div class="container forms">
+        
+        
+        <img src="p2.jpg.png">
 
-            <label for ="firstName">Name:</label><br>
+        <div class="page">
+        <div class="header">
+                <a id="login" class="active" href="#login">login</a>
+                <a id="signup" href="#signup">signup</a>
+            </div>
+            <div class="content">
+                <form id="forms" class="form login">
+                   
+                    <div class = "form-field">
+            
+                        <label for ="userName"> Username:</label><br>
+                        <input type="text" id="userName">
+                        <small></small>
+                    </div>
+    
+                    <div class ="form-field">
+            
+                        <label for ="password"> Password:</label><br>
+                        <input type="text" id="password">
+                        <small></small>
+                    </div>
+            
+                    <div class = "form-field">
+            
+                       <input type="submit" value = "Log In">
+                    </div>
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                    </div>
+                </form>
+
+    <form id="signup" class="form signup">
+        <div class = "form-field">
+
+            <label for ="firstName"> First Name:</label><br>
             <input type="text" id="firstName">
         </div>
-        <div>
+        <div class = "form-field">
 
-            <label for ="lastName"> Score:</label><br>
+            <label for ="lastName"> Last Name:</label><br>
             <input type="text" id="lastName">
         </div>
+        <div class = "form-field">
+
+            <label for ="email">Email:</label><br>
+            <input type="text" id="Email">
+            <small></small>
+        </div>
+        <div class = "form-field">
+
+            <label for ="userName"> Username:</label><br>
+            <input type="text" id="userName">
+            <small></small>
+        </div>
+        <div class = "form-field">
+
+            <label for ="idNumber">Id Number</label><br>
+            <input type="text" id="idNumber">
+            <small></small>
+        </div class = "form-field">
         <div>
 
-           <button type="submit">Next page</button>
+            <label for ="password"> Password:</label><br>
+            <input type="text" id="password">
+            <small></small>
+        </div>
+
+        <div>
+
+            <label for ="confirmPw">Confirm Password:</label><br>
+            <input type="text" id="confirmPassword">
+            <small></small>
+        </div>
+        <div class = "form-field">
+
+            <div class="field button-field">
+                <input type="submit" value = "Sign up">
+            </div>
+            <div class="form-link">
+                <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+            </div>
         </div>
     </form>
-</body>
-    <script>
-        const form = document.getElementById('form');
-        const firstName = document.getElementById('firstName');
-        const lastName = document.getElementById('lastName');
+    </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="datab.js">
+  
 
-        form.addEventListener('submit',function(e){
-            e.preventDefault();
-
-            const firstNameValue = firstName.value;
-            const lastNameValue = lastName.value;
-
-            // localStorage.setItem('myObject',JSON.stringify([firstNameValue, lastNameValue]))
-
-            localStorage.setItem('first-name', firstNameValue);
-            localStorage.setItem('last-name', lastNameValue);
-
-            window.location.href = "miniproj_mainInteractive.html";
-        })
+    
     </script>
+
+</body>
 
 </html>
