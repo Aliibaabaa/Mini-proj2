@@ -297,6 +297,7 @@ body {
   min-height: 100%;
   
 }
+
 .closes{
   /* margin-left: -40rem; */
   font-size: 28px;
@@ -438,33 +439,33 @@ font-size: 25px;
 
 
 /* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 9; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: auto; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-   
-    
+.modal_multi {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */ 
   }
+
   
+    
   /* Modal Content/Box */
-  .modal-content {
+  /* .modal-content {
     background-color: #fefefe;
-    margin: 20% auto; /* 15% from the top and centered */
+    margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
-    transition: translate(50%,50%);
+    width: 80%;
     
     
   }
-  
+   */
   /* The Close Button */
   .closes {
     color: #aaa;
@@ -481,12 +482,12 @@ font-size: 25px;
     text-decoration: none;
     cursor: pointer;
   }
-  .aclose {
+  /* .aclose {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-    /* margin-left: 80rem; */
+    margin-left: 80rem;
     justify-content: center;
   }
   
@@ -495,7 +496,7 @@ font-size: 25px;
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+  } */
   
 
   .modalContainer{
@@ -507,12 +508,13 @@ font-size: 25px;
     height: auto;
     grid-gap:1rem;
     text-align: center;
+    justify-items: center;
   }
   .modalCard{
 background-position: top;
 background-size: cover;
 padding:5rem 0rem 0rem 0rem;
-    width:100%;
+    width:85%;
     max-width: 20rem;
     border-radius: 0.5rem;
     overflow:hidden;
