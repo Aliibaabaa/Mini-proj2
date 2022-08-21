@@ -9,6 +9,17 @@
 
 </head>
 <body>
+    <button  class="thisBtn" >
+       Login as Teacher
+      </button>
+      <div id="myModal" class="modal modal_multi">
+        <!--modal content-->
+        <div class="modal-content" style ="background-color: #fefefe;
+        margin: 0;
+        padding: 0px;
+        border: 1px solid #888;
+        width:100%">
+             <span class="closes">&times;</span>
     <div class="container forms">
         
         
@@ -20,83 +31,105 @@
                 <a id="signup" href="#signup">signup</a>
             </div>
             <div class="content">
-                <form id="forms" class="form login">
+                <form name ="login" id="forms" class="form login" onsubmit = "return validateForm" method = "post">
                    
                     <div class = "form-field">
             
                         <label for ="userName"> Username:</label><br>
-                        <input type="text" id="userName">
+                        <input type="text" id="userName" name="usernamel"  autocomplete="off">
                         <small></small>
                     </div>
     
                     <div class ="form-field">
             
                         <label for ="password"> Password:</label><br>
-                        <input type="text" id="password">
+                        <input type="text" id="password" name="passwordl"  autocomplete="off">
                         <small></small>
                     </div>
             
                     <div class = "form-field">
             
-                       <input type="submit" value = "Log In">
+                       <input type="submit" value = "Log In"  autocomplete="off">
                     </div>
                     <div class="form-link">
                         <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
                     </div>
                 </form>
 
-    <form id="signup" class="form signup">
+    <form name = "signup" id="signup" class="form signup">
         <div class = "form-field">
 
             <label for ="firstName"> First Name:</label><br>
-            <input type="text" id="firstName">
+            <input type="text" id="firstName"  autocomplete="off">
+            <small></small>
         </div>
         <div class = "form-field">
 
             <label for ="lastName"> Last Name:</label><br>
-            <input type="text" id="lastName">
+            <input type="text" id="lastName"  autocomplete="off">
+            <small></small>
         </div>
+
+        <div class = "form-field">
+
+            <label for ="gradeLevel"> Grade Level:</label><br>
+            <input type="text" id="gradeLevel"  autocomplete="off">
+            <small></small>
+        </div>
+
+        <div class = "form-field">
+
+            <label for ="section"> Section:</label><br>
+            <input type="text" id="section"  autocomplete="off">
+             <small></small>
+        </div>
+
         <div class = "form-field">
 
             <label for ="email">Email:</label><br>
-            <input type="text" id="Email">
+            <input type="text" id="Email"  autocomplete="off">
             <small></small>
         </div>
         <div class = "form-field">
 
             <label for ="userName"> Username:</label><br>
-            <input type="text" id="userName">
+            <input type="text" id="userName"  autocomplete="off">
             <small></small>
         </div>
         <div class = "form-field">
 
             <label for ="idNumber">Id Number</label><br>
-            <input type="text" id="idNumber">
+            <input type="text" id="idNumber"  autocomplete="off">
             <small></small>
         </div class = "form-field">
         <div>
 
             <label for ="password"> Password:</label><br>
-            <input type="text" id="password">
+            <input type="password" id="password"  autocomplete="off">
             <small></small>
         </div>
 
         <div>
 
             <label for ="confirmPw">Confirm Password:</label><br>
-            <input type="text" id="confirmPassword">
+            <input type="password" id="confirmPassword"  autocomplete="off">
             <small></small>
         </div>
+        <!-- <a id="login" class="active" href="#login">login</a> -->
+        
         <div class = "form-field">
 
             <div class="field button-field">
-                <input type="submit" value = "Sign up">
+                <!-- <input a id="login" class="active" href="#login" type="submit" value = "Sign up">  -->
+                <button type = "submit"><a id="login" class="active" href="#login">Signup</a></button>
             </div>
             <div class="form-link">
                 <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
             </div>
         </div>
     </form>
+    </div>
+    </div>
     </div>
     </div>
     </div>
