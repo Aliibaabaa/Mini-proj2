@@ -17,7 +17,8 @@
 <body>
   <!-- sidbar -->
   <div id="mySidebar" class="sidebars">
-    <div style = " height: 20px; background:#f2e38f; margin-top:-25px ; padding-bottom:0px;"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <div style = " height: 20px; background:#f2e38f; margin-top:-25px ; padding-bottom:0px;"> 
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     </div>
         
         <ul class="navbars" style = "border-top: 5px solid #d3b400;">
@@ -139,8 +140,8 @@
                                 <h3 class = "modal_title">Math</h3>
                                 <p class = "card-body">
                           
-                                <input type = "button" value = "Play Game">
-                                </p>
+                                <a href="choose_level.html"><input type="button" value = "Play Game">
+                               </a> </p>
                                 </div>
                             </div>
 
@@ -800,6 +801,7 @@ function closeNav() {
 //carousel
   $(`.carousel`).carousel ({ interval: 1000});
 </script>
+
 <script src ="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
     

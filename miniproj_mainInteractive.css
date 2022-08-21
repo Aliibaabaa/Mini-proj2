@@ -530,7 +530,7 @@ body{
     width:85%;
     max-width: 20rem;
     overflow:hidden;
-    transition:transform 500ms ease;
+    transition:transform 0.5s ease-in-out;
     border: 1px dashed #17794b;
     border-radius: 2rem;
 }
@@ -543,9 +543,9 @@ body{
   --padding: 0.5rem;
   padding: var(--padding);
   background: linear-gradient(
-  hsl(0 0% 0%/ 0),
-  rgba(3, 141, 7, 0.509) 10%,
-  rgb(4, 76, 32)
+    hsl(0 0% 0%/ 0),
+    rgba(14, 181, 20, 0.405) 10%,
+    rgba(4, 76, 32, 0.898)
   );
  
 }
@@ -581,9 +581,15 @@ body{
   color:white;
 }
 
-.modalCard button:hover,.button:focus{
+/* .modalCard button:hover,.button:focus{
   background-color: var(--clr-neutral-900);
   color: hsl(142, 90%, 61%);
+} */
+
+.modalCard input:hover ,  .button:focus{
+  background-color:#064326;
+  transition: 0.5s ease-in-out;
+  border: 1px solid #49c269;
 }
 
 .modalCard:hover .modal_title::after,
@@ -593,7 +599,7 @@ body{
 @media (hover) {
   .modalContent{
       transform: translateY(65%);
-      transition: transform 500ms ease;
+      transition: transform 0.5s ease-in-out;
   }
   
   .modalCard:hover .modalCContent, .modalCard:focus-within .modalCContent {
