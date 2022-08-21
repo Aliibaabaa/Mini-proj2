@@ -264,6 +264,7 @@ body{
     border-radius: 0.5rem;
     overflow:hidden;
     transition:transform 500ms ease;
+    box-shadow: 1px 5px 10px 4px #8181813f;
 }
 
 @media screen and (max-width: 768px) {
@@ -687,6 +688,7 @@ body{
     background-color: #f2e38f49;
     background-blend-mode: screen;
     border: 4px outset #f2e38f;
+    box-shadow: 1px 8px 10px 4px #8181814e;
 }
 
 .CcContent{
@@ -703,7 +705,7 @@ body{
     color:#17794b;
     -webkit-text-stroke: 0.5px #09583392;
     font-size: 27px;
-    text-shadow: 1px 1px 10px #f2e38f;
+    text-shadow: 1px 1px 5px #faf5d9;
     letter-spacing: 2px;
     font-weight: bold;
     font-family: 'Chelsea Market', cursive;
@@ -712,7 +714,7 @@ body{
 .dropdown {
   font-family: 'Roboto Condensed', sans-serif;
   -webkit-text-stroke: 0.5px #09583392;
-  text-shadow: 1px 1px 10px #fefefb;
+  text-shadow: 1px 1px 5px #fefefb;
 }
 
     .dropdown .btn{
