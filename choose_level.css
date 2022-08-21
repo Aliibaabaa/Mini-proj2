@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caudex&family=Caveat+Brush&family=Caveat:wght@400;500;600&family=Chelsea+Market&family=Lexend+Mega&family=PT+Sans+Narrow&family=Poppins:ital,wght@0,200;0,400;0,600;1,400&family=Questrial&family=Quicksand&family=Schoolbell&family=Zen+Antique+Soft&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex&family=Caveat+Brush&family=Caveat:wght@400;500;600&family=Chelsea+Market&family=Gaegu:wght@300;400;700&family=Lexend+Mega&family=Luckiest+Guy&family=PT+Sans+Narrow&family=Poppins:ital,wght@0,200;0,400;0,600;1,400&family=Questrial&family=Quicksand&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&family=Schoolbell&family=Zen+Antique+Soft&display=swap');
 
 *  {
     margin: 0;
@@ -216,15 +216,11 @@ body {
     display: flex;
     /* align-items: center;
     justify-content: center;*/ 
-    z-index: -2;
     background-color: transparent;
 }
 
-.hero .wrap-hero {
-    margin-left: -2%;
-}
 
-.hero h1 {
+/* .hero h1 {
     margin: 0;
     line-height: 54px;
     text-transform: uppercase;
@@ -248,10 +244,40 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    /* margin-right: 22px; */
     background-color:#085f36fa;
     box-shadow: 3px 3px 3px #0a0a0a55;
+} */
+
+.nav-pills .nav-link {
+    border: 1px dotted #d3b400;
+    background-color: #17794be5;
 }
+
+.nav-pills .nav-link.active {
+    border: 1px dotted #f2e38f;
+    background-color:#d3b400;
+}
+
+.nav-pills a {
+    margin: 3px 10px;  
+    color: white;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 20px;
+    text-shadow: 3px 2px 3px #000000fc;
+    letter-spacing: 2px;
+    /* -webkit-text-stroke: 1px black; */
+}
+
+.col-6 #change-sub a{
+    color: #064326;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 18px;
+    background-color:#f2e38f;
+    border-radius: 50%;
+    padding: 15px;
+    border: 1px dashed #064326;
+}
+
 
 .wrapper {
     margin-top: -100px;
@@ -265,23 +291,11 @@ body {
     height:auto;
 }
 
-.abt-top {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color:#064326;
-    text-shadow: 3px 3px 3px #0a0a0a3a;
-    margin-left: 5px;
-}
-
-.abt-cont {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    margin-left: 30px;
-}
 
 
 
+
+/*====FOOTER====*/
 .cont-ft {
     z-index: 5;
 }
@@ -311,7 +325,7 @@ body {
     ;
 }
 
-.row #footer-cont{
+ #footer-cont{
 	display: flex;
 	flex-wrap: wrap;
 }
