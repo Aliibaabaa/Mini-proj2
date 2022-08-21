@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="p2.jpg.png" type="image/png">
+    <link rel="stylesheet" href="inquire_now.css">
+    
+
+    <title>EVANGELICAL CHRISTIAN SCHOOL,INC. </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container-fluid">
+          <a class="logo" href="homee.html"><img src="p2.jpg.png" class="logo"></a>
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MYNAV" aria-controls="#MYNAV" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="MYNAV">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="homee.html"> <i class="fa fa-fw fa-home"></i> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fa fa-leanpub"></i> Learn with Me! </a>
+              </li>
+              <li class="nav-item dropdownn">
+                <a class="nav-link" href="underconst.html"><i class="fa fa-pencil-square-o"></i> Admissions
+                  <button class="btn1"> 
+                      <i class="fa fa-caret-down"></i>
+                </button>
+              </a>
+                  <ul class="dropdown-cont" style="min-width:200px;">
+                    <li><a class="dropdown-item" href="#">Early Childhood</a></li>
+                    <li><a class="dropdown-item" href="#">Grade School</a></li>
+                    <li><a class="dropdown-item" href="#">Junior High School</a></li>
+                    <li><a class="dropdown-item" href="#">Senior High School</a></li>
+                  </ul>
+          </li>
+            <li class="nav-item dropdownn">
+                  <a class="nav-link" href="underconst.html"><i class="fa fa fa-bars"></i> Services
+                    <button class="btn1"> 
+                        <i class="fa fa-caret-down"></i>
+                  </button>
+                </a>
+                    <ul class="dropdown-cont">
+                      <li><a class="dropdown-item" href="#">Registrar</a></li>
+                      <li><a class="dropdown-item" href="#">Treasury</a></li>
+                    </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="underconst.html"><i class="fa fa-info"></i> Facilities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="underconst.html"><i class="fa fa-briefcase"></i> Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html"><i class="fa fa-info"></i> About Us</a>
+            </li>
+          </ul>
+          <button class="btn " type="submit" id="LogIn-btn">
+            <a href="sign-in.html"><i class="fa fa-user-circle-o"></i> Log in </a> </button>
+        </div>
+      </div>
+    </nav> 
+
+    <!-- <div class="hero"> 
+        <img src="p1.jpg" class="backvid">
+</div> 
+     -->
+
+
+     <br/><br/><br>
+
+     <p>
+         <form action="/action_page.php">
+             <fieldset> 
+               <div class="container-fluid" id="top-i">
+                 <div class="row">
+                   <div class="col-12">
+                     <h1>INQUIRY DETAILS</h1>
+                   </div>
+                 </div>
+               </div><hr>
+                     <div class="container-fluid">
+                     <!-- 3 cols top -->
+                        <div class="row" id="row-top"> 
+                           <div class="col">
+                             <!-- <h3 class="col-head">Connect with Us</h3> -->
+                             <p id="cont"> 
+                              Please complete this form to submit your inquiry. We look forward to hearing from you! 
+                             </p>
+                           </div>  
+                         </div>
+                        <hr>
+                     </div>
+   
+                      <!-- form-->
+                      <div class="container-form">
+                       <div class="form-col">
+   
+                         <form action="#" class="form-res"> 
+                           <!-- <h2 class="form-head" id="top-i">Inquiry Details</h2> -->
+                           
+                         <div class="form-field">
+                               <p>Full Name :   
+                               <input type="text" Placeholder =" First, Middle, Last Name" required ></p>
+                         </div>   
+   
+                         <div class="form-field">
+                               <p>Email Address :   
+                               <input type="email" Placeholder ="user@gmail.com" required></p>
+                         </div>
+   
+                         <div class="form-field">
+                             <p class="col-6 d-inline-block">Contact Number :      <br>
+                             <input type="number" Placeholder ="Contact Number" required>
+   
+                            </p>
+                         </div>
+
+                         <div class="form-field">
+                            <p class="col-6 d-inline-block" id="inqType">Inquiry Type :    <br>
+                                <select class="form-select" required aria-label="Default select example">
+                                <option selected><i>Choose one</i></option>
+                                <option value="1">Enrollment</option>  
+                                <option value="2">Payment</option>
+                                <option value="3">Assessment</option>
+                                <option value="4">Application</option>
+                                <option value="5">Other</option>
+                              </select>
+                            </p>
+                      </div>
+   
+                         <div class="form-field">
+                               <p>Subject :  <br>
+                               <input type = "number" min ="0" id= "psize" name = "partysize" placeholder="Inquiry Subject" required style="width: 50%;"></p>
+                         </div>
+   
+                         <div class="form-field">
+                             <p>Description :   
+                             <input type="text" Placeholder ="Please input inquiry details here" style="height:100px" required></p>
+                         </div> 
+   
+                           <!--<a href="#" button type="submit" class="btn btn-primary" id="loginbtn">Submit</button> </a>-->
+   
+                           <a href="#Submit-btn" class="btn" data-bs-toggle="modal" data-bs-target="#Submit-btn" id="Submit-btnn" style="font-size:16px; padding:6px;">Submit </a> 
+   
+                       </form>   
+                     </div>
+   
+                   </div>
+              
+         </fieldset> 
+       </form>
+     </p>
+         <br/> <br/>
+   
+   
+   <div class="modal fade" id="Submit-btn" tabindex="-1" aria-labelledby="Submit-Modal" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+       <div class="modal-title">
+         <img src="p2.jpg.png" style="height: 50px; width:50px;margin:5px;"> 
+          Evangelical Christian School 
+           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
+           </button>
+       </div>
+           <div class="modal-body">
+             <p>Thank you for your interest in Evangelical Christian School. Please wait for a call from our staff to get back to you with more information. We look forward to welcoming you! </p>
+             <hr>
+             <p>Meanwhile, you can connect with us and be updated  by following our social media pages: <br> 
+               <ul class="list-inline" id="socmed">
+                 <li class="list-inline-item">
+                     <a class="text-para" href="#" title="Facebook"> <i class="fa fa-facebook"> </i></a>
+                 </li>
+                 <li class="list-inline-item">
+                     <a class="text-para" href="#" title="Instagram"> <i class="fa fa-instagram"></i></a>
+                 </li>
+                 <li class="list-inline-item">
+                     <a class="text-para" href="#" title="Twitter"> <i class="fa fa-twitter"></i></a>
+                 </li>
+                 <li class="list-inline-item">
+                     <a class="text-para" href="#" title="Youtube"> <i class="fa fa-youtube-play"></i></a>
+                 </li>
+               </ul>
+             </p>
+           </div>
+         </div>
+       </div>
+     </div>     
+
+<br> <br> <br> 
+<br> <br> <br> 
+
+<div class="cont-ft">
+    <footer class="footer">
+      <div class="foot">
+      <div class="container" id="footer-cont">
+        <div class="row" id="footer-row">
+          <div class="footer-col">
+            <h4>CONTACT US</h4>
+            <ul id="footer-ul">
+              <li class="list-item">
+                <p> <b style="margin-left:-20px;">School Location </b>  
+                  <br>1191 Canuto St., Brgy. San Juan,
+                  <br>Pili, Camarines Sur, Philippines 4418
+                  </p>
+              </li>
+              <li class="list-item">
+                <p> <b style="margin-left:-20px;">Contact Numbers</b>
+                  <br>+63(2) 8891-0837 
+                  <br>+63(2) 8891-0843
+                  <br>(480) 525-7150
+                </p>
+                </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>CONNECT WITH US</h4>
+            <ul id="footer-ul">
+              <li class="list-item">
+                  <a class="text-para" href="#" title="Gmail"> <i class="fa fa-envelope"></i> ecs_ph@gmail.com</a>
+              </li>
+              <li class="list-item">
+                  <a class="text-para" href="#" title="Facebook"> <i class="fa fa-facebook"></i> Evangelical Christian School </a>
+              </li>
+              <li class="list-item">
+                  <a class="text-para" href="#" title="Instagram"> <i class="fa fa-instagram"></i> ECS_ph</a>
+              </li>
+              <li class="list-item">
+                  <a class="text-para" href="#" title="Twitter"> <i class="fa fa-twitter"></i> ECS_ph</a>
+              </li>
+              <li class="list-item">
+                  <a class="text-para" href="#" title="Youtube"> <i class="fa fa-youtube-play"></i> Evangelical Christian School</a>
+              </li>
+          </ul>
+          </div>
+          <div class="footer-col">
+            <h4>GET HELP</h4>
+            <ul id="footer-ul">
+              <li class="list-item"><a href="about_us.html">About Us</a></li>
+              <li class="list-item"><a href="#">Admissions</a></li>
+              <li class="list-item"><a href="#">Services</a></li>
+              <li class="list-item"><a href="#">Careers</a></li>
+              <li class="list-item"><a href="#">Request for Assistance</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+               <div>
+                <a href="#"><img src="p2.jpg.png" class="logo-ft">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" id="bottom-ft">
+        &copy; grp1 ecs bla blablabla 2022
+    </div>
+    
+    </footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<script>
+   var nav = document.querySelector('nav');
+   
+  window.addEventListener('scroll', function() {
+      if(window.pageYOffset > 100) {
+        nav.classList.add('bg-success', 'shadow');
+        document.getElementsByClassName('.dropdown-menu').style.backgroundColor = '#08331fce';
+      }else{
+        nav.classList.remove('bg-success','shadow')
+        document.getElementsByClassName('.dropdown-menu').style.backgroundColor = 'none';
+      }
+    })
+</script>
+
+</body>
+</html>

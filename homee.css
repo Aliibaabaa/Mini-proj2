@@ -310,7 +310,7 @@
 
 @media screen and (min-width: 280px)  and (max-device-width: 670px) {
  * {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .backvid {
@@ -334,7 +334,7 @@
         height: 300px;
     }
      .carousel-caption p{
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
     }
 }
@@ -409,7 +409,6 @@
 /*ECS EXCELLENCE*/
 
  #feats1 h1{
-    font-weight: bold;
     font-family: 'Lexend Mega', sans-serif;
     font-size: 45px;
     letter-spacing: 0.3rem;
@@ -505,7 +504,7 @@
 }
 
 .s-top {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     font-family: 'Lexend Mega', sans-serif;
     letter-spacing: 1px;
@@ -603,7 +602,7 @@
     margin: 8px 0;
  }
 
- .swiper .swiper-button {
+ .swiper-button {
     display: inline-flex;
     background-image: linear-gradient(#29550bd7,#d9d562dd); 
     box-shadow: 0px 14px 60px #2e262648;
@@ -633,8 +632,13 @@
     } */
     .swiper {
         max-width: 490px;
-        height: 250px;
+        height: 290px;
     }
+    #feat5 {
+        width: 100%;
+        font-size: 14px;
+    }
+
  }
 
  @media screen and (max-width: 992px) {
@@ -644,7 +648,11 @@
    }
    .swiper-button {
     margin-left: 60%;
-}
+    }
+    #feat5 {
+        width: 100%;
+        font-size: 14px;
+    }
  }
  
  @media screen and (max-height: 500px) and (min-width: 992px) {
@@ -654,11 +662,11 @@
    .swiper-slide img {
     height: 270px;
  }
-}
-  .swiper-slide {
+    .swiper-slide {
     display: flex;
     align-items: center;
  }
+}
 
 @media screen and (max-width: 576px) {
     .swiper-slide img {
@@ -674,7 +682,7 @@
 
  @media screen and (min-width: 280px)  and (max-device-width: 670px) {
     .swiper {
-        max-width: 500px;
+        max-width: 480px;
         height: 500px;
      }
     .swiper-slide img {
@@ -689,10 +697,15 @@
         margin-top: -10px
     }
 
+    #feat5 {
+        width: 100%;
+        font-size: 14px;
+    }
+
 }
 
 #feat5 {
-    background: linear-gradient(#4b931ac5,#edbd45b2); 
+    background: linear-gradient(#265b03ae,#eeb62a82); 
     box-shadow: 0px 14px 80px rgba(46, 38, 38, 0.4);
     width: 100%;
     border: none;
@@ -701,6 +714,7 @@
     font-size: 16px;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
+    margin: 10px;
 }
 
 #feat5:hover {
@@ -830,8 +844,8 @@
 
 .logo-ft {
     max-width: 100%;
-    height: auto;
-    transform: rotateY(20deg);
+    height:auto;
+    /* transform: rotateY(20deg); */
     filter: drop-shadow(18px 15px 12px rgba(2, 80, 2, 0.597));
     align-content: center;
     
@@ -860,12 +874,14 @@
 
 /**CALENDAR**/
 .event .event-section {
+    /* padding: 0px 10px 10px 10px; */
     display: flex;
     align-items: center;
     justify-content: space-around; 
     flex-flow: wrap;
-    flex-basis: 25%;
+    /* flex-basis: 25%; */
     /* border: 2px solid red; */
+    /* width:100%; */
 }
 
 .event .event-content {
@@ -881,7 +897,7 @@
     background: transparent;
         position:relative;
         margin: 0px;
-    flex-basis: 25%;
+    flex-basis: 30%;
     /* border: 2px solid green; */
     /* overflow: hidden; */
 }
@@ -921,7 +937,7 @@
 
     .content-text {
         padding: 5px;
-        /* margin: 2%; */
+        margin: 2%;
     }
 
     .content-text .event-menu h4{
