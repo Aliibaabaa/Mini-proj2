@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caudex&family=Caveat+Brush&family=Caveat:wght@400;500;600&family=Chelsea+Market&family=Lexend+Mega&family=PT+Sans+Narrow&family=Poppins:ital,wght@0,200;0,600;1,400&family=Questrial&family=Quicksand&family=Schoolbell&family=Zen+Antique+Soft&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caudex&family=Caveat+Brush&family=Caveat:wght@400;500;600&family=Chelsea+Market&family=Gaegu:wght@300;400;700&family=Lexend+Mega&family=Luckiest+Guy&family=PT+Sans+Narrow&family=Poppins:ital,wght@0,200;0,400;0,600;1,400&family=Questrial&family=Quicksand&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&family=Schoolbell&family=Zen+Antique+Soft&display=swap');
 
 :root{
     --clr-dark-900: hsl(220, 5%, 12%);
@@ -21,15 +20,16 @@ body{
         rgb(249, 251, 249) 10%,
         rgb(238, 243, 243)
     );
-    font-family: sans-serif;
+    font-family: 'Poppins',sans-serif;
     margin:0;
     overflow: scroll;
 }
+
 .navhr{
   size: 100px; 
   height: 20px;
   border: 5px solid black;
-  background-color : rgb(184, 135, 11);
+  background-color : #f2e38f;
   width: 270px; 
   margin-left:-25px;
   z-index:2;
@@ -38,25 +38,103 @@ body{
 .navbars{
   display:grid;
   padding-bottom: 5px;
-
-
 }
-.navbars-items{
+
+.navbars-items img {
+  width: 200px;
+  height: auto;
+}
+
+
+.sidebars {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#17794b;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 1.5rem;
+  visibility:hidden;
+}
+
+.sidebars a {
+  padding: 0px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebars table a {
+  padding: 0px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebars a:hover {
+  color: #f1f1f1;
+}
+
+.sidebars li {
+  padding: 8px 0px 8px 20px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  text-align: left;
   color: white;
-  text-shadow: 2px 2px #000000;
-  font-family: 'Chelsea Market', cursive;
-  font-weight: bold
+  text-shadow: 3px 3px 10px #010101e2;
+  font-family: 'Questrial', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  
 }
+
+.sidebars li:hover {
+  color: #f1f1f1;
+}
+
+.sidebars .closebtn {
+  position: absolute;
+  margin-top: 0;
+  font-size: 18px;
+  margin-left: 13rem;
+ 
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #17794b;
+  color: white;
+  padding-bottom:7rem;
+  border: none;
+  margin-bottom: 10rem;
+  margin-left: 0rem;
+  width: 3.5rem;
+  height: 5rem;
+  
+}
+
+.openbtn:hover {
+  background-color: #f2e38f;
+  border-top: 6px solid #d3b400;
+  color:#17794b;
+}
+
 /*.navbar{
     width:50%;
     height:auto;
     z-index: 1;
     position:sticky;
-
-    
-    
-
 }
+
 .navbar-nav{
     display:grid;
     margin-top: 0px;
@@ -66,10 +144,9 @@ body{
     width: 16rem;
     background-color: hsl(137, 76%, 18%);
     list-style-type: none;
-    padding: 5rem 5rem 2rem 2rem;
-    
-
+    padding: 5rem 5rem 2rem 2rem;   
 }
+
 .nav-item{
    color: var(--clr-light-100);
 }
@@ -91,16 +168,18 @@ body{
     top:0;
     z-index:9;
 }
+
 .carousel{
   height: 35rem;
+  /* background-color:#9cf9ce66; */
 }
+
 .carousel img{
   height:35rem;
-  size:cover;
-  position:center;
+  size: cover;
+  position: center;
   mix-blend-mode: multiply;
-
-  
+  filter: opacity(.8);
 }
 
 .carousel-conti{
@@ -113,104 +192,28 @@ body{
   left: 5rem;
   justify-content: center;
 }
+
 .carousel-conti h1{
-  font-size:2.5rem;
+  font-size:3rem;
   color: white;
   text-shadow: 3px 3px #000000;
-  font-family: 'Chelsea Market', cursive;
-  font-weight: bold
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 2px black;
 }
 
 .carousel-conti p{
-  color:white;
-  font-size: 1.5rem;
-  text-shadow: 2px 2px #000000;
-  font-weight: bold;
+  color:rgb(227, 230, 151);
+  font-size: 1.3rem;
+  text-shadow: 3px 3px 3px black;
   font-family: 'Chelsea Market', cursive;
-}
-.schoolName{
-  border:1px solid black;
-  padding-bottom:5rem;
-  top:-15;
+  -webkit-text-stroke: 1px black;
 }
 
-.sidebars {
-    height: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(6, 77, 39);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 1.5rem;
-    visibility:hidden;
-  }
-  
-  .sidebars a {
-    padding: 0px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  .sidebars table a {
-    padding: 0px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebars a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidebars li {
-    padding: 8px 0px 8px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    color: hsl(0, 8%, 95%);
-    display: block;
-    transition: 0.3s;
-    text-align: left;
-  }
-  
-  .sidebars li:hover {
-    color: #f1f1f1;
-  }
-  .sidebars .closebtn {
-    position: absolute;
-    margin-top: 0;
-    font-size: 18px;
-    margin-left: 13rem;
-   
-  }
-  
-  .openbtn {
-    font-size: 30px;
-    cursor: pointer;
-    background-color: hsl(152, 86%, 16%);
-    color: white;
-    padding-bottom:7rem;
-    border: none;
-    margin-bottom: 10rem;
-    margin-left: 0rem;
-    width: 3.5rem;
-    height: 5rem;
-    
-  }
-  
-  .openbtn:hover {
-    background-color: rgb(207, 162, 25);
-    color: rgb(9, 95, 24);
-  }
-  
   
   #main {
-    transition: margin-left .5s;
+    transition: margin-left .5s all ease-in-out;
     top:0;
     padding: 0px;
     width: 100%;
@@ -234,7 +237,6 @@ body{
     border: 1px solid black;
     overflow:hidden;
 }
-.welcome_card h1
 
 .main_container{
     margin-top: 2rem;
@@ -251,103 +253,92 @@ body{
     width: 100%;
     height: auto;
     text-align: center;
-   padding: 0rem 10rem 0rem 10rem;
-   
-  
+     padding: 0rem 10rem 0rem 10rem;
 }
 
 
 .grid_card{
-
-padding: 5rem 0rem 0rem 0rem;
+    padding: 5rem 0rem 0rem 0rem;
     width:100%;
     max-width: 35ch;
     border-radius: 0.5rem;
     overflow:hidden;
     transition:transform 500ms ease;
-  
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
   .grid_card,.card_content{
     width:auto;
-   
-}
-.grid_container{
-  padding:0rem 0rem 0rem 1rem;
-  width: 100%;
-  grid-gap: 1.5rem;
-}
-.grid_card{
-  max-width: 20ch;
-  margin: auto;
-}
-body{
-  width: 100%;
-  padding: 0;
-}
-*{
-  width:100%;
+    }
 
-}
-html{
-  height: 100%;
-  /* overflow-x: hidden; */
-}
-body {
-  min-height: 100%;
-  
-}
+    .grid_container{
+      padding:0rem 0rem 0rem 1rem;
+      width: 100%;
+      grid-gap: 1.5rem;
+    }
+    .grid_card{
+      max-width: 20ch;
+      margin: auto;
+    }
+    body{
+      width: 100%;
+      padding: 0;
+    }
+    *{
+      width:100%;
 
-.closes{
-  /* margin-left: -40rem; */
-  font-size: 28px;
-}
+    }
+    html{
+      height: 100%;
+      /* overflow-x: hidden; */
+    }
+    body {
+      min-height: 100%;
+    }
 
- 
+    .closes{
+      /* margin-left: -40rem; */
+      font-size: 28px;
+    }
 
-.carousel{
-  width: 100%;
-  height: 100%;
-}
+    .carousel{
+      width: 100%;
+      height: 100%;
+    }
 
-.carousel img {
-  height:15rem;
-}
-.carousel-conti h1{
-  font-size:1.5rem;
- 
-}
+    .carousel img {
+      height:15rem;
+    }
+    .carousel-conti h1{
+      font-size:1.5rem;
+    }
 
-.carousel-conti p{
-  color:white;
-  font-size: 12px;
- 
-}
+    .carousel-conti p{
+      color:white;
+      font-size: 12px;
+    }
 
-.carousel-conti{
-  /* padding-top: 2rem;
-  padding-bottom:0rem; */
-  z-index:1;
-  width: 100%;
-  float:left;
-  position: absolute;
-  bottom: 1rem;
-  padding-right: 5rem;
+    .carousel-conti{
+      /* padding-top: 2rem;
+      padding-bottom:0rem; */
+      z-index:1;
+      width: 100%;
+      float:left;
+      position: absolute;
+      bottom: 1rem;
+      padding-right: 5rem;
+    }
 
-  
-}
-.footer-bottom{
-  padding-top: 0rem;
-}
-.mileStones h1{
-  font-size:1rem;
-}
+    .footer-bottom{
+      padding-top: 0rem;
+    }
+    .mileStones h1{
+      font-size:1rem;
+    }
 }
   
 .grid_card:hover,.grid_card:focus-within{
-
-transform: scale(1.05);
-
+    transform: scale(1.05);
 }
 
 .grid_card button{
@@ -359,31 +350,40 @@ transform: scale(1.05);
     padding: .5em 1.25em;
     border-radius: 5em;
     border-style:none;
+    transition: 0.3s all ease-in-out;
 }
 
 .grid_card button:hover,.button:focus{
     background-color: var(--clr-neutral-900);
     color: hsl(142, 90%, 61%);
+    text-transform: uppercase;
 }
+
 .card_content{
---padding: 1.5rem;
-padding: var(--padding);
-background: linear-gradient(
-hsl(0 0% 0%/ 0),
-rgba(3, 141, 7, 0.509) 10%,
-rgb(4, 76, 32)
-);
-color:white;
-  text-shadow: 1px 1px #000000;
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(
+      hsl(0 0% 0%/ 0),
+      rgba(3, 141, 8, 0.641) 10%,
+      rgb(4, 76, 32)
+      );
+  color:white;
+    text-shadow: 1px 1px #000000;
 }
 
 .card_title{
-position: relative;
-bottom:15px;
-width: max-content;
-color:hsl(0, 0%, 100%);
-font-size: 25px;
+    position: relative;
+    bottom:15px;
+    width: max-content;
+    color:hsl(0, 0%, 100%);
+    font-size: 25px;
+    font-family: 'Chelsea Market', cursive;
+    /* -webkit-text-stroke: 1px black; */
+    text-shadow: 3px 3px #00000057;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
+
 .card_title::after{
     content: "";
     position: absolute;
@@ -394,7 +394,6 @@ font-size: 25px;
     background: var(--clr-accent-400);
     transform-origin: left;
     transition: transform 500ms ease;
-
 }
 
 .grid_card:hover .card_title::after,
@@ -403,7 +402,10 @@ font-size: 25px;
 }
 
 .card-body{
-    color:rgb(255 255 255/ 0.8);
+    color:#ffffffcc;
+    font-family: 'Gaegu', cursive;
+    font-size: 22px;
+    line-height: 20px;
 }
 
 @media (hover) {
@@ -456,17 +458,17 @@ font-size: 25px;
   
     
   /* Modal Content/Box */
+  
   /* .modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    
-    
   }
-   */
-  /* The Close Button */
+  */
+  
+   /* The Close Button */
   .closes {
     color: #aaa;
     float: right;
@@ -497,7 +499,15 @@ font-size: 25px;
     text-decoration: none;
     cursor: pointer;
   } */
-  
+
+  .Subject-text {
+    font-family: 'Chelsea Market', cursive;
+    color:#d3b400;
+    text-shadow: 3px 2px 3px #01010188;
+    -webkit-text-stroke: 1px #095833;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 
   .modalContainer{
     margin-top: 1rem;
@@ -510,24 +520,23 @@ font-size: 25px;
     text-align: center;
     justify-items: center;
   }
+
+
   .modalCard{
-background-position: top;
-background-size: cover;
-padding:5rem 0rem 0rem 0rem;
+    background-size:cover;
+    background-position:center;
+    padding:5rem 0rem 0rem 0rem;
     width:85%;
     max-width: 20rem;
-    border-radius: 0.5rem;
     overflow:hidden;
     transition:transform 500ms ease;
-    border:1px solid black;
-    border-radius:2rem;
+    border: 1px dashed #17794b;
+    border-radius: 2rem;
 }
 
 .modalCard:hover,.modalCard:focus-within{
-
   transform: scale(1.05);
-  
-  }
+ }
  
 .modalCContent{
   --padding: 0.5rem;
@@ -544,6 +553,7 @@ padding:5rem 0rem 0rem 0rem;
   width: max-content;
   color:hsl(0, 0%, 100%);
   font-size: 25px;
+  opacity: 0;
   }
 
   .modal_title::after{
@@ -555,8 +565,7 @@ padding:5rem 0rem 0rem 0rem;
       width:calc(100% + var(--padding));
       background: var(--clr-accent-400);
       transform-origin: left;
-      transition: transform 500ms ease;
-  
+      transition: transform 0.5s ease-in-out;
   }
 
 .modalCard input{
@@ -568,6 +577,7 @@ padding:5rem 0rem 0rem 0rem;
   padding: .5em 1.25em;
   border-radius: 5em;
   border-style:none;
+  color:white;
 }
 
 .modalCard button:hover,.button:focus{
@@ -610,9 +620,34 @@ padding:5rem 0rem 0rem 0rem;
 
 }
 
+.progress-sec {
+  text-decoration: none;
+  font-family: 'Chelsea Market', cursive;
+  font-size: 18px;
+  color:#095833;
+  text-shadow: 3px 2px 3px #01010152;
+  -webkit-text-stroke: 0.5px #09583392;
+  letter-spacing: 1.5px;
+  border: none;
+  transition: 1s ease-in-out;
+  }
+ 
+  .progress-sec:hover {
+    text-transform: uppercase;
+    transform: scale(1);
+  }
 
-
-
+.stripp {
+  background-color: #f2e38f; 
+  padding:2px; text-align:center; 
+  font-size:3rem; 
+  font-family: 'Luckiest Guy', cursive;
+  color:#17794b;
+  border-bottom: 5px solid #d3b400;
+  -webkit-text-stroke: 0.5px whitesmoke;
+  text-shadow: 3px 3px #00000057;
+  letter-spacing: 3px;
+}
 
 .mileStones{
     text-align:center;
@@ -637,52 +672,82 @@ padding:5rem 0rem 0rem 0rem;
   }
 
 .mileContCard{
-    
     height: 25rem;
-    border:1px solid black;
     border-radius:2rem;
     background: linear-gradient(
-rgb(0, 0, 0),
-rgba(193, 197, 193, 0.69)
-rgb(249, 251, 250)
-);
-width:100%;
+    rgb(0, 0, 0),
+    rgba(193, 197, 193, 0.69)
+    rgb(249, 251, 250)
+    );
+    width:100%;
     max-width: 20rem;
     overflow:hidden;
-   
-    
-
-
+    background-size:cover; 
+    background-position:center; 
+    background-color: #f2e38f49;
+    background-blend-mode: screen;
+    border: 4px outset #f2e38f;
 }
+
 .CcContent{
     --padding: 2.8rem;
-padding: var(--padding);
-text-align:center;
-border-radius:2rem;
-
-
+    padding: var(--padding);
+    text-align:center;
+    border-radius:2rem;
+    font-family: 'Gaegu', cursive;
 }
+
 .mile_title{
     position: relative;
     width: max-content;
-    color:hsl(136, 81%, 31%);
+    color:#17794b;
+    -webkit-text-stroke: 0.5px #09583392;
     font-size: 27px;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 10px #f2e38f;
     letter-spacing: 2px;
     font-weight: bold;
+    font-family: 'Chelsea Market', cursive;
+}
 
-    }
+.dropdown {
+  font-family: 'Roboto Condensed', sans-serif;
+  -webkit-text-stroke: 0.5px #09583392;
+  text-shadow: 1px 1px 10px #fefefb;
+}
 
     .dropdown .btn{
       font-weight: bold;
-      text-shadow: 1px 1px 1px black;
+      text-shadow: 1px 1px 9px #f9f9f6;
+      letter-spacing: 1px;
     }
 
     .dropdown a{
       color: var(--clr-accent-400);
       font-weight: bold;
-      text-shadow: 1px 1px 1px black;
+      text-shadow: 1px 1px 5px #b4b4b4;
+      font-family: 'Questrial', sans-serif;
+      -webkit-text-stroke: 0.5px #09583392;
     }
+
+  #back-home {
+    font-size: 14px;
+    color: white;
+    text-shadow: 3px 3px 10px #010101e2;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+  }
+
+  #back-home:hover {
+    transform: scale(1.1);
+    color:#f2e38f
+  }
+
+
     /* .footer{
       position: static;
       bottom: -20;
@@ -800,6 +865,7 @@ border-radius:2rem;
   }
   }
    */
+   
    .footer {
     background-color: #e9ecef;
     margin:0;
@@ -931,7 +997,7 @@ border-radius:2rem;
     transform: rotateY(20deg);
     filter: drop-shadow(18px 15px 12px rgba(2, 80, 2, 0.597));
     align-content: center;
-    margin-top: 20px;
+    margin: 10px;
     
 }
 
