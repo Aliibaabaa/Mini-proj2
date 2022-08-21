@@ -267,6 +267,7 @@ padding: 5rem 0rem 0rem 0rem;
     transition:transform 500ms ease;
   
 }
+
 @media screen and (max-width: 768px){
   .grid_card,.card_content{
     width:auto;
@@ -303,7 +304,6 @@ body {
   font-size: 28px;
 }
 
- 
 
 .carousel{
   width: 100%;
@@ -683,6 +683,7 @@ border-radius:2rem;
       font-weight: bold;
       text-shadow: 1px 1px 1px black;
     }
+    
     /* .footer{
       position: static;
       bottom: -20;

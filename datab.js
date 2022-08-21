@@ -1,12 +1,12 @@
 $(window).on("hashchange", function () {
 	if (location.hash.slice(1) == "signup") {
 		$(".page").addClass("extend");
-		$("#form").removeClass("active");
-		$("#signup").addClass("active");
+		$("#login").removeClass("active");
+		$("#student").addClass("active");
 	} else {
 		$(".page").removeClass("extend");
-		$("#form").addClass("active");
-		$("#signup").removeClass("active");
+		$("#login").addClass("active");
+		$("#student").removeClass("active");
 	}
 });
 $(window).trigger("hashchange");
@@ -14,17 +14,24 @@ $(window).trigger("hashchange");
         const formsu = document.getElementById('forms');
         const firstName = document.getElementById('firstName');
         const lastName = document.getElementById('lastName');
+        const gradeLevel = document.getElementById('gradeLevel');
+        const section = document.getElementById('section');
+
 
         formsu.addEventListener('submit',function(e){
             e.preventDefault();
 
             const firstNameValue = firstName.value;
             const lastNameValue = lastName.value;
+            const gradeLevelValue = gradeLevel.value;
+            const sectionValue = section.value
 
             // localStorage.setItem('myObject',JSON.stringify([firstNameValue, lastNameValue]))
 
             localStorage.setItem('first-name', firstNameValue);
             localStorage.setItem('last-name', lastNameValue);
+            localStorage.setItem('grade-level', gradeLevelValue);
+            localStorage.setItem('sec-tion', sectionValue);
 
             window.location.href = "miniproj_mainInteractive.html";
         })
@@ -187,20 +194,21 @@ const debounce = (fn, delay = 500) => {
 
 form.addEventListener('input', debounce(function (e) {
     switch (e.target.id) {
-        case 'username':
+        case 'userName':
             checkUsername();
             break;
-        case 'email':
+        case 'Email':
             checkEmail();
             break;
         case 'password':
             checkPassword();
             break;
-        case 'confirm-password':
+        case 'confirmPassword':
             checkConfirmPassword();
             break;
     }
 }));
+
 const forms = document.querySelector(".forms");
 const links =document.querySelectorAll(".link");
 
@@ -210,3 +218,60 @@ links.forEach(link => {
      forms.classList.toggle("show-signup");
     })
     })
+
+    let validateForm =() => {
+        let x =  document.forms["login"]["usernamel"].value["passwordl"].value;
+        if (x ==" "){
+            alert("input must not be blank");
+            return false;
+        }
+    }
+      // Get the modal
+
+      var modalparent = document.getElementsByClassName("modal_multi");
+
+      // Get the button that opens the modal
+
+      var modal_btn_multi = document.getElementsByClassName("thisBtn");
+
+      // Get the <span> element that closes the modal
+      var span_close_multi = document.getElementsByClassName("closes");
+
+      // When the user clicks the button, open the modal
+      function setDataIndex() {
+
+          for (i = 0; i < modal_btn_multi.length; i++)
+          {
+              modal_btn_multi[i].setAttribute('data-index', i);
+              modalparent[i].setAttribute('data-index', i);
+              span_close_multi[i].setAttribute('data-index', i);
+          }
+      }
+
+
+
+      for (i = 0; i < modal_btn_multi.length; i++)
+      {
+          modal_btn_multi[i].onclick = function() {
+              var ElementIndex = this.getAttribute('data-index');
+              modalparent[ElementIndex].style.display = "block";
+          };
+
+          // When the user clicks on <span> (x), close the modal
+          span_close_multi[i].onclick = function() {
+              var ElementIndex = this.getAttribute('data-index');
+              modalparent[ElementIndex].style.display = "none";
+          };
+
+      }
+
+      window.onload = function() {
+
+          setDataIndex();
+      };
+
+      window.onclick = function(event) {
+          if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+              modalparent[event.target.getAttribute('data-index')].style.display = "none";
+          }
+        }

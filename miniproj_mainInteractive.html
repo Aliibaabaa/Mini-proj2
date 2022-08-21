@@ -40,8 +40,8 @@
             <li class="navbars-items"><img src = "baba_t.webp" width ="180px"></li>
              <li class="navbars-items">Student id#</li>
              <li class="navbars-items">Student Name: <br><span id = "first-name"></span> <span id = "last-name"></span></li>
-             <li class="navbars-items">Grade</li>
-              <li class="navbars-items">Section</li>
+             <li class="navbars-items">Grade: <span id = "grade-level"></span></li>
+              <li class="navbars-items">Section: <span id = "sec-tion"></span></li>
               <li class="navbars-items">Best Subject</li>
               <li class="navbars-items">Worst Subject</li>
         
@@ -820,9 +820,13 @@ function closeNav() {
 //         localStorage.remove('myObject');
         const firstNames = localStorage.getItem('first-name');
         const lastNames = localStorage.getItem('last-name');
+        const gradeLevels = localStorage.getItem('grade-level');
+        const sections = localStorage.getItem('sec-tion');
 
         document.getElementById('first-name').textContent = firstNames;
         document.getElementById('last-name').textContent = lastNames;
+        document.getElementById('grade-level').textContent = gradeLevels;
+        document.getElementById('sec-tion').textContent = sections;
 
 //carousel
   $(`.carousel`).carousel ({ interval: 1000});
