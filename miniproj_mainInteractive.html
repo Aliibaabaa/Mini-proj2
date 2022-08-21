@@ -38,10 +38,10 @@
           <li class="navbars-items" style="font-size: 20px;"> <i class="fa fa-id-card fa-fw" aria-hidden="true"></i> STUDENT PROFILE</li>
           <li class="navbars-items"><img src = "avatar.png" width ="180px"></li>
           <li class="navbars-items" id="nav-i">Student id #</li>
-          <li class="navbars-items" id="nav-i">Student Name; <br>
+          <li class="navbars-items" id="nav-i">Student Name:<br>
             <span id = "full-name"></span> </li>
           <li class="navbars-items" id="nav-i">Grade <br>
-            <span id = "grade"></span></li>
+            <span id = "grade-level"></span></li>
           <li class="navbars-items" id="nav-i">Section <br>
             <span id = "section"></span></li>
           <li class="navbars-items" id="nav-i">Best Subject</li>
@@ -795,10 +795,10 @@ function closeNav() {
 //         localStorage.remove('myObject');
         const fullNames = localStorage.getItem('full-name');
         const section = localStorage.getItem('section');
-        const grades  = localStorage.getItem('grade')
-        document.getElementById('full-name').textContent = firstNames;
-        document.getElementById('grade').textContent = section;
-        document.getElementById('section').textContent = grades;
+        const grades  = localStorage.getItem('grade-level')
+        document.getElementById('full-name').textContent = fullNames;
+        document.getElementById('section').textContent = section;
+        document.getElementById('grade-level').textContent = grades;
         
 
 //carousel
