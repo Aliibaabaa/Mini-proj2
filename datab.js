@@ -36,13 +36,14 @@ $(window).trigger("hashchange");
             window.location.href = "miniproj_mainInteractive.html";
         })
 
+        //validation
 
 const usernameEl = document.querySelector('#userName');
 const emailEl = document.querySelector('#Email');
 const passwordEl = document.querySelector('#password');
 const confirmPasswordEl = document.querySelector('#confirmPassword');
 
-const form = document.querySelector('form');
+const form = document.querySelector('forms');
 
 
 const checkUsername = () => {
