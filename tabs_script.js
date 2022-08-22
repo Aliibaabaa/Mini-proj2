@@ -43,7 +43,16 @@ let tabs = document.querySelectorAll('.tabs_toggle'),
      modal_btn_multi[i].onclick = function() {
          var ElementIndex = this.getAttribute('data-index');
          modalparent[ElementIndex].style.display = "block";
-     };
+
+        //  const navLink = document.getElementsByClassName('.nav-link.active');
+        //         navLink.style.backgroundColor = "#ebd13c";
+        //         navLink.style.fontWeight = "bold";
+        //         navLink.style.textTransform = " uppercase";
+        //         navLink.style.color = "white";
+        //         navLink.style.borderStyle = "dotted";
+        //         navLink.style.borderWidth = "1px";
+        //         navLink.style.borderColor = "#f2e38f";
+         };
 
      // When the user clicks on <span> (x), close the modal
      span_close_multi[i].onclick = function() {
@@ -66,22 +75,22 @@ let tabs = document.querySelectorAll('.tabs_toggle'),
 
 
 
-/**to display list of games */
-const easyMwrapper = document.getElementById('EasyMwrapper')
+// /**to display list of games */
+// const easyMwrapper = document.getElementById('EasyMwrapper')
 
-easyLevel.onclick = function easyLevel() {
-        easyMwrapper.style.visibility = "visible";
+// easyLevel.onclick = function easyLevel() {
+//         easyMwrapper.style.visibility = "visible";
 
-        const easyLevel = document.getElementById('easyLevel');
+//         const easyLevel = document.getElementById('easyLevel');
 
-        easyLevel.style.backgroundColor = "#ebd13c";
-        easyLevel.style.fontWeight = "bold";
-        easyLevel.style.textTransform = " uppercase";
-        easyLevel.style.color = "white";
-        easyLevel.style.borderStyle = "dotted";
-        easyLevel.style.borderWidth = "1px";
-        easyLevel.style.borderColor = "#f2e38f";
-    }
+//         easyLevel.style.backgroundColor = "#ebd13c";
+//         easyLevel.style.fontWeight = "bold";
+//         easyLevel.style.textTransform = " uppercase";
+//         easyLevel.style.color = "white";
+//         easyLevel.style.borderStyle = "dotted";
+//         easyLevel.style.borderWidth = "1px";
+//         easyLevel.style.borderColor = "#f2e38f";
+//     }
 
 
 // function easyLevel(evt, levelName) {
