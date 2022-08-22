@@ -9,6 +9,9 @@
 body {
     /* background-color:#118951; */
     background-image: linear-gradient(#99d17360,#f5f29977);
+    background: url(bg2.webp);
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 .container-fluid .logo img{
