@@ -13,15 +13,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  
+    
     column-gap: 30px;
 }
 .form{
+    margin-top:200px;
     position: absolute;
     max-width: 430px;
     width: 100%;
     padding: 30px;
     border-radius: 6px;
+    box-shadow: 0px 8px 16px 10px #00000033 ;
     background: #FFF;
 }
 .form.signup{
@@ -42,9 +44,7 @@ header{
     color: #232836;
     text-align: center;
 }
-form{
-    margin-top: 30px;
-}
+
 .form .field, form .field{
     position: relative;
     height: 50px;
@@ -84,6 +84,16 @@ form{
     background-color: #01d355;
     transition: all 0.3s ease;
     cursor: pointer;
+}
+.thisBtn{
+    color: #fff;
+    background-color: #01d355;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 50px;
+}
+.thisBtn:hover{
+    background-color: #01cb4e;
 }
 .field button:hover{
     background-color: #01cb4e;
