@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="p2.jpg.png" type="image/png">
-    <link rel="stylesheet" href="inquire_now.css">
+    <link rel="stylesheet" href="req_asstnce.css">
     
 
     <title>EVANGELICAL CHRISTIAN SCHOOL,INC. </title>
@@ -85,23 +85,10 @@
                <div class="container-fluid" id="top-i">
                  <div class="row">
                    <div class="col-12">
-                     <h1>INQUIRY DETAILS</h1>
+                     <h1>REQUEST FOR ASSISTANCE</h1>
                    </div>
                  </div>
                </div><hr>
-                     <div class="container-fluid">
-                     <!-- 3 cols top -->
-                        <div class="row" id="row-top"> 
-                           <div class="col">
-                             <!-- <h3 class="col-head">Connect with Us</h3> -->
-                             <p id="cont"> 
-                              Please complete this form to submit your inquiry. We look forward to hearing from you! 
-                             </p>
-                           </div>  
-                         </div>
-                        <hr>
-                     </div>
-   
                       <!-- form-->
                       <div class="container-form">
                        <div class="form-col">
@@ -109,6 +96,20 @@
                          <form action="#" class="form-res"> 
                            <!-- <h2 class="form-head" id="top-i">Inquiry Details</h2> -->
                            
+                           <div class="form-field">
+                            <p class="col-6 d-inline-block" id="inqType">Inquiree :    <br>
+                                <select class="form-select" required aria-label="Default select example">
+                                <option selected><i>Choose one</i></option>
+                                <option value="1">Student</option>  
+                                <option value="2">Parent</option>
+                                <option value="3">Guardian</option>
+                                <option value="4">Enrollee</option>
+                                <option value="5">School Applicant</option>
+                                <option value="6">Job Applicant</option>
+                                <option value="7">Others</option>
+                              </select>
+                            </p>
+                      </div>
                          <div class="form-field">
                                <p>Full Name :   
                                <input type="text" Placeholder =" First, Middle, Last Name" required ></p>
@@ -138,6 +139,47 @@
                               </select>
                             </p>
                       </div>
+
+                      <div class="form-field">
+                        <p class="col-6 d-inline-block" id="inqType">Case Reason :    <br>
+                            <select class="form-select" required aria-label="Default select example">
+                                    <option value="">--None--</option>
+                                    <option value="Forgot Username and Password">Forgot Username and Password</option>
+                                    <option value="Http 404 Error/Error Title">Http 404 Error/Error Title</option>
+                                    <option value="Application Form is incomplete">Application Form is incomplete</option>
+                                    <option value="Cannot proceed to the next step">Cannot proceed to the next step</option>
+                                    <option value="Application Deadline">Application Deadline</option>
+                                    <option value="Incorrect Username and Password">Incorrect Username and Password</option>
+                                    <option value="How to enroll?">How to enroll?</option>
+                                    <option value="Enrollment Deadline">Enrollment Deadline</option>
+                                    <option value=">Enrollment Exam Details">Enrollment Examination Details</option>
+                                    <option value="Enrollment Examination Retake">Enrollment Examination Retake</option>
+                                    <option value="Transaction Failed">Transaction Failed</option>
+                                    <option value="Can I change the payment channel?">Can I change the payment channel?</option>
+                                    <option value="No OR Found (Internal, for validation of payment)">No OR Found (Internal, for validation of payment)</option>
+                                    <option value="How to pay for Tuition Fee?">How to pay for Tuition Fee?</option>
+                                    <option value="How much is the tuition fee?">How much is the Tuition fee?</option>
+                                    <option value="What are the modes of payment?">What are the modes of payment?</option>
+                                    <option value="No section available">No section available</option>
+                                    <option value="No schedule available">No schedule available</option>
+                                    <option value="Change of Schedule">Change of Schedule</option>
+                                    <option value="Change Section">Change Section</option>
+                                    <option value="Change of Mode of Payment">Change of Mode of Payment</option>
+                                    <option value="How does the &quot;Matriculation Fee - Initial Payment work&quot;?">How does the "Matriculation Fee - Initial Payment work"?</option>
+                                    <option value="Tuition Fee Discrepancy">Tuition Fee Discrepancy</option>
+                                    <option value="Payment Posting">Payment Posting</option>
+                                    <option value="Cancellation of Enrollment">Cancellation of Enrollment</option>
+                                    <option value="Submission of Requirements">Submission of Requirements</option>
+                                    <option value="When is the start of classes?">When is the start of classes?</option>
+                                    <option value="Availment of Early Bird Discount">Availment of Sibling Discount</option>
+                                    <option value="Request a copy of curriculum">Request a copy of curriculum</option>
+                                    <option value="How to get my ID?">How to get my ID?</option>
+                                    <option value="Cannot activate my ECS Account">Cannot activate my ECS Account</option>
+                                    <option value="Grade Acquisition">Grade Acquisition</option>
+                                    <option value="others">others</option>
+                          </select>
+                        </p>
+                  </div>
    
                          <div class="form-field">
                                <p>Subject :  <br>

@@ -8,8 +8,12 @@
 }
 
 body {
-    background-color:#37e09134;
+    background-color:#6cb8165e;
     background-image: linear-gradient(#99d17360,#f5f29977);
+        background-image: url(bg3.webp) ; 
+        background-size:cover;
+        background-blend-mode:soft-light;
+
 }
 
 .container-fluid .logo img{
@@ -189,12 +193,6 @@ body {
 }
 
 
-body {
-    background-image: url(p1.jpg) ; 
-    background-size:cover;
-    background-blend-mode:soft-light;
-}
-
 
 .btn-close-white {
     filter: invert(1) grayscale(100%) brightness(-100%); 
@@ -231,21 +229,22 @@ body {
     line-height:1.8;
     margin: auto;
    /** background: radial-gradient(859px at 10% 20%, rgb(245, 220, 154) 0%, #a44e33 90%);**/
-   background-color: beige;
+   background-color: rgba(211, 248, 220, 0.371);
     border-color: 2px solid #0e1215;
     box-shadow: 6px 6px 4px 2px #0f0f0f84;
     border-radius: 20px;
     font-size: 12px;
+    background-image: url(bg2.webp);
+    background-size: cover;
   }
   
   #top-i {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Lexend Mega', sans-serif;
       /* font-size: 70px; */
-      letter-spacing: 5px;
+     font-weight: 800;
       border-color: 2px solid #0e1215;
-      text-shadow: 2px 5px 2px #a762137c;
+      text-shadow: 2px 5px 4px #a762137c;
       justify-content: center;
-      font-weight: 700;
       text-transform: uppercase;
   }
   
@@ -317,8 +316,10 @@ body {
   }
   
   form p {
-    font-weight:600;
+    font-weight:800;
     font-family: 'Questrial', sans-serif;
+    font-size: 15px;
+    text-shadow: 2px 2px 10px #ffffffe5;
   }
   
   .form-field {
@@ -346,10 +347,18 @@ body {
   /* #inqType option:hover {
     background-color: #0f0f0f84;
   } */
-
+  .form-select option {
+    color:#062d1b;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
   
+  .form-select option:hover {
+    background-color: #17794b;
+  }
+
   #Submit-btnn {
-    background-image: linear-gradient(#29550b97,#d9d562a4);
+    background-image: linear-gradient(#7da46497,#e8e47ebd);
     color: white;
     padding: 14px;
     margin: 10px ;;
@@ -387,9 +396,6 @@ body {
     transform: scale(2);
   }
 
-  .form-select option {
-    font-size: 12px;
-  }
   
   @media screen and (max-width: 640px){
     ul{
@@ -634,7 +640,7 @@ body {
 
 .logo-ft {
     max-width: 100%;
-    height:auto;
+    height:auto;r
     /* transform: rotateY(20deg); */
     filter: drop-shadow(18px 15px 12px rgba(2, 80, 2, 0.597));
     align-content: center;
