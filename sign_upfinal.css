@@ -242,7 +242,7 @@ header{
     transition: 0.3s ease-in-out;
     background-color: #08331ff1;
     border: 1px solid #f9f9f93c;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .form-check {
@@ -289,7 +289,7 @@ label {
 
 .signup-link:hover {
   background-color:#10673ea9;
-  border-radius: 10px;
+  border-radius: 15px;
   color: white;
     text-transform: uppercase;
     padding:8px;
@@ -307,7 +307,7 @@ label {
 
 .form-content a:hover{
     background-color:#10673ea9;
-    border-radius: 10px;
+    border-radius: 15px;
     color: white;
     text-transform: uppercase;
     padding:8px;
