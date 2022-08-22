@@ -481,7 +481,8 @@ body {
   #grid-btn {
     width: max-content;
     color: black;
-    background: linear-gradient(#265b03ae,#eeb62a82); 
+    /* background: linear-gradient(#265b03ae,#eeb62a82);  */
+    background: linear-gradient(#427b1dfd,#efec86); 
     box-shadow: 5px 5px 10px rgba(46, 38, 38, 0.563);
     border-radius: 10px;
     font-size: 12px;
@@ -495,7 +496,7 @@ body {
     color: white;
     text-transform: uppercase;
     transition: 0.3s;
-    background-color: #08331ff1;
+    background-color: #08331ff5;
     border: 1px solid #08331ff1;;
     font-weight: bold;
     
