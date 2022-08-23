@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: #7CC6FE;
+  background: linear-gradient(#98d173,#f5f299);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +60,7 @@ body {
   height: 50px;
   font-size: 16px;
   color: #FFFFFF;
-  background-color: #545E75;
+  background-color: #07490f;
 }
 
 .answer-item button:hover {
@@ -74,7 +74,9 @@ body {
     </style>
 </head>
 <body>
+    
     <div class="quiz-container">
+        <h1 style ="text-align:center;">Math Quiz Easy</h1>
         <div class="question">
       <!--     Q) Where will the questions appear? What if the question is super long like this? -->
         </div>
@@ -92,6 +94,7 @@ body {
             <button>Answer 4</button>
           </div> -->
         </div>
+        
         <div class="quiz-score">
       
         </div>
@@ -100,27 +103,31 @@ body {
         // define our data and state objects
 const quizQuestions = [
   {
-    questionText: "What is 1 + 1?",
+   
+    questionText: "1) What is 1 + 1?",
     answerOptions: ["2", "3", "4", "11"],
     answer: "2"
   },
   {
-    questionText: "What is 2 -5",
+    
+    questionText: "2) What is 12 + 5",
     answerOptions: [
-      "-3",
+      "17",
       "3",
-      "-2",
+      "12",
       "2"
     ],
-    answer: "-3"
+    answer: "17"
   },
   {
-    questionText: "Amanda has 3 apples she ate 2 of them and gave 1 to her friend, how mand bananas did she buy?",
+    
+    questionText: "3) Amanda ate 2 apples and gave 1 to her friend, how many bananas did she buy?",
     answerOptions: ["0", "3", "7", "this statement is nonsense"],
     answer: "this statement is nonsense"
   },
   {
-    questionText: "Benjamin ate 2 pies how man kg did he gain?",
+    
+    questionText: "4) Benjamin ate 2 pies how man kg did he gain?",
     answerOptions: ["5", "3", "7", "unknown"],
     answer: "unknown"
   }
@@ -152,7 +159,7 @@ const createQuizScore = () => {
 
 const createQuestionText = questionText => {
   // append our div to our answer list
-  questionDisplay.textContent = "Q)" + questionText;
+  questionDisplay.textContent = questionText;
 };
 
 const createAnswerButtons = answerOptions => {
@@ -188,6 +195,7 @@ const createAnswerButtons = answerOptions => {
       // otherwise display the scores
       if (quizQuestions[currentQuestion]) {
         createQuizQuestion(quizQuestions[currentQuestion]);
+        document.write(quizQuestions[answer])
       } else {
         createQuizScore();
       }
