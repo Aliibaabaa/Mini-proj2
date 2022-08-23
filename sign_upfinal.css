@@ -160,10 +160,12 @@ body {
 .form.signup{
     opacity: 0;
     pointer-events: none;
-}
+  }
+  
 .forms.show-signup .form.signup{
     opacity: 1;
     pointer-events: auto;
+  
 }
 .forms.show-signup .form.login{
     opacity: 0;
@@ -284,6 +286,14 @@ label {
     font-weight: 400;
     color: #040404;
     font-family: 'Questrial', sans-serif;
+}
+
+#loginlink:hover {
+  background-color:#10673ea9;
+  border-radius: 15px;
+  color: white;
+    text-transform: uppercase;
+    padding:8px;
 }
 
 .signup-link:hover {
